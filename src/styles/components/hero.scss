@@ -1,0 +1,76 @@
+@import "../colors";
+
+.hero-wrap  {
+  height: 100vh;
+  background-color: black;
+  background-image: url('../../assets/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+
+  ._main-content-wrap {
+    padding-top: 134px;
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+
+    .img-name-wrap, .my-info-wrap {
+      flex: 1;
+    }
+
+    .img-name-wrap {
+      flex: 2;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      max-height: calc(100vh - 134px);
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        max-width: 300px;
+      }
+      .name-wrap {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        color: white;
+        font-size: 42px;
+        .fname, .lname {
+          margin: 0;
+        }
+        .lname {
+          line-height: 1.1;
+        }
+
+        .fake-border {
+          margin: 0;
+          margin-top: 16px;
+          color: $primary;
+          border-color: $primary;
+          max-width: 220px;
+        }
+      }
+    }
+
+    .my-info-wrap {
+      align-self: center;
+      color: white;
+      .role-name {
+        color: $primary;
+        margin-bottom: 8px;
+        border-bottom: 1px solid $primary;
+      }
+      .location-info-1, .location-info-2 {
+        margin: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      .contact-email {
+        color: $primary;
+      }
+    }
+  }
+
+}

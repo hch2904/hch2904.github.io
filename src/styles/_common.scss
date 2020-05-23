@@ -1,0 +1,19 @@
+@import "./colors";
+
+.hch-btn-primary {
+    height: 32px;
+    background-color: $bg-primary;
+    border: 1px solid white;
+    color: white;
+    width: fit-content;
+    padding: 0 8px;
+    font-size: 14px;
+    min-width: 90px;
+    border-radius: 10px;
+    transition: background-color 300ms ease-in-out;
+    cursor: pointer;
+    &:hover, &:active {
+        background-color: #333;
+        border-color: $primary;
+    }
+}
