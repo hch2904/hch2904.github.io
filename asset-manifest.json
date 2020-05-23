@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ee47d71.chunk.css",
-    "main.js": "/static/js/main.836352d6.chunk.js",
-    "main.js.map": "/static/js/main.836352d6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.36c8ad59.js",
-    "runtime-main.js.map": "/static/js/runtime-main.36c8ad59.js.map",
-    "static/js/2.b8872bcd.chunk.js": "/static/js/2.b8872bcd.chunk.js",
-    "static/js/2.b8872bcd.chunk.js.map": "/static/js/2.b8872bcd.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.368d53200df10525633ab63d6a36a939.js": "/precache-manifest.368d53200df10525633ab63d6a36a939.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.3ee47d71.chunk.css.map": "/static/css/main.3ee47d71.chunk.css.map",
-    "static/js/2.b8872bcd.chunk.js.LICENSE.txt": "/static/js/2.b8872bcd.chunk.js.LICENSE.txt",
-    "static/media/hero.scss": "/static/media/hero-bg.fd88e2ed.png",
-    "static/media/my-hero-img.png": "/static/media/my-hero-img.2a44e5ad.png"
+    "main.css": "/hch2904/static/css/main.de381147.chunk.css",
+    "main.js": "/hch2904/static/js/main.a409ce10.chunk.js",
+    "main.js.map": "/hch2904/static/js/main.a409ce10.chunk.js.map",
+    "runtime-main.js": "/hch2904/static/js/runtime-main.d29ce4e1.js",
+    "runtime-main.js.map": "/hch2904/static/js/runtime-main.d29ce4e1.js.map",
+    "static/js/2.b8872bcd.chunk.js": "/hch2904/static/js/2.b8872bcd.chunk.js",
+    "static/js/2.b8872bcd.chunk.js.map": "/hch2904/static/js/2.b8872bcd.chunk.js.map",
+    "index.html": "/hch2904/index.html",
+    "precache-manifest.89e0554cb69e9683daec9ad1fd3ea038.js": "/hch2904/precache-manifest.89e0554cb69e9683daec9ad1fd3ea038.js",
+    "service-worker.js": "/hch2904/service-worker.js",
+    "static/css/main.de381147.chunk.css.map": "/hch2904/static/css/main.de381147.chunk.css.map",
+    "static/js/2.b8872bcd.chunk.js.LICENSE.txt": "/hch2904/static/js/2.b8872bcd.chunk.js.LICENSE.txt",
+    "static/media/hero.scss": "/hch2904/static/media/hero-bg.fd88e2ed.png",
+    "static/media/my-hero-img.png": "/hch2904/static/media/my-hero-img.2a44e5ad.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.36c8ad59.js",
+    "static/js/runtime-main.d29ce4e1.js",
     "static/js/2.b8872bcd.chunk.js",
-    "static/css/main.3ee47d71.chunk.css",
-    "static/js/main.836352d6.chunk.js"
+    "static/css/main.de381147.chunk.css",
+    "static/js/main.a409ce10.chunk.js"
   ]
 }
