@@ -1,12 +1,17 @@
 import React from 'react';
 
 import myImg from '../assets/images/my-hero-img.png';
+import bgVideo from '../assets/bg-video.mp4';
 
 import '../styles/components/hero.scss';
+import SocialLinks from './social';
 
 const Hero = () => {
   return (
     <div className="hero-wrap">
+      <video className='video-wrap' autoPlay muted loop id="myVideo">
+        <source src={bgVideo} type="video/mp4" />
+      </video>
       <div className="_main-content-wrap">
         <div className="img-name-wrap">
           <img src={myImg} alt="" className="my-img-wrap"/>
@@ -14,6 +19,7 @@ const Hero = () => {
             <h1 className='fname'>Himanshu</h1>
             <h1 className='lname'>Chanan</h1>
             <hr className='fake-border' />
+            <SocialLinks />
           </div>
         </div>
         <div className="my-info-wrap">

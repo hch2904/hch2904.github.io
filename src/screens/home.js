@@ -1,15 +1,17 @@
 import React from 'react';
 import NavigationBar from '../components/navbar';
-
-import Logo from '../assets/svgs/logo';
 import Hero from '../components/hero';
+import WhatIdo from '../components/whatIdo';
+import AboutMe from '../components/aboutMe';
+import Footer from '../components/footer';
 
 const HomeScreen = () => {
   return (<>
-    <NavigationBar 
-      logo={Logo}
-    />
+    <NavigationBar />
     <Hero />
+    <AboutMe />
+    <WhatIdo />
+    <Footer />
   </>
   );
 };

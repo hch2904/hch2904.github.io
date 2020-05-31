@@ -3,13 +3,19 @@
 .hero-wrap  {
   height: 100vh;
   background-color: black;
-  background-image: url('../../assets/images/hero-bg.png');
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  .video-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+  }
 
   ._main-content-wrap {
-    padding-top: 134px;
+    height: 100%;
     display: flex;
+    align-items: center;
     max-width: 960px;
     margin: 0 auto;
 
@@ -20,20 +26,21 @@
     .img-name-wrap {
       flex: 2;
       display: flex;
-      justify-content: flex-end;
-      position: relative;
-      max-height: calc(100vh - 134px);
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
       width: 100%;
+      position: relative;
 
       img {
-        height: 100%;
-        width: 100%;
-        max-width: 300px;
-      }
-      .name-wrap {
         position: absolute;
-        top: 220px;
-        left: 0;
+        bottom: 0;
+        left: 30%;
+        z-index: 0;
+      }
+
+      .name-wrap {
+        z-index: 1;
         color: white;
         font-size: 42px;
         .fname, .lname {
@@ -50,10 +57,12 @@
           border-color: $primary;
           max-width: 220px;
         }
+
       }
     }
 
     .my-info-wrap {
+      z-index: 1;
       align-self: center;
       color: white;
       .role-name {
@@ -73,4 +82,29 @@
     }
   }
 
+}
+
+@media only screen and (max-width: 960px) {
+
+  ._main-content-wrap {
+    .img-name-wrap {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .hero-wrap .video-wrap {
+      width:100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .hero-wrap .video-wrap { 
+      width:auto;
+      height: 100%;
+  }
 }
