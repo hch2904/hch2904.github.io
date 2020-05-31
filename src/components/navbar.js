@@ -1,12 +1,13 @@
 import React from 'react';
 import '../styles/components/navigation.scss';
+import Icons from '../assets/svgs/icons';
 
-const NavigationBar = (props) => {
+const NavigationBar = () => {
   return (
     <div className='navbar-wrap'>
       <div className="desk-wrap">
         <div className='left-panel'>
-          {props.logo}
+          {Icons.LOGO}
         </div>
         <div className='right-panel'>
           <div className="menu-items-wrap">
