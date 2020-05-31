@@ -1,0 +1,54 @@
+@import "../colors";
+
+.about-me-wrap-full {
+  background-color: $bg-primary;
+  padding: 120px 0;
+  .about-me-wrap-960 {
+    max-width: 960px;
+    margin: 0 auto;
+
+    .about-me-heading-wrap {
+      color: $primary;
+      .__heading {
+        margin-bottom: 16px;
+        font-size: 32px;
+      }
+      hr {
+        text-align: left;
+        width: 260px;
+        border-color: $primary;
+        margin: 0;
+      }
+    }
+
+    .__content-wrap {
+      display: flex;
+      color: white;
+      .__left-panel,
+      .__right-panel {
+        flex: 1;
+        margin-right: 32px;
+      }
+
+      .experience-wrap {
+        display: flex;
+        align-items: center;
+        .__noxp {
+          color: $primary;
+          font-size: 42px;
+          padding-right: 16px;
+          font-weight: bolder;
+          margin-top: -12px;
+        }
+        .__text-wrap {
+          color: white;
+          font-size: 18px;
+        }
+      }
+      .__email {
+        color: $primary;
+        cursor: pointer;
+      }
+    }
+  }
+}
