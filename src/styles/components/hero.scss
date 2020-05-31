@@ -1,0 +1,110 @@
+@import "../colors";
+
+.hero-wrap  {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  .video-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+  }
+
+  ._main-content-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+
+    .img-name-wrap, .my-info-wrap {
+      flex: 1;
+    }
+
+    .img-name-wrap {
+      flex: 2;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        z-index: 0;
+      }
+
+      .name-wrap {
+        z-index: 1;
+        color: white;
+        font-size: 42px;
+        .fname, .lname {
+          margin: 0;
+        }
+        .lname {
+          line-height: 1.1;
+        }
+
+        .fake-border {
+          margin: 0;
+          margin-top: 16px;
+          color: $primary;
+          border-color: $primary;
+          max-width: 220px;
+        }
+
+      }
+    }
+
+    .my-info-wrap {
+      z-index: 1;
+      align-self: center;
+      color: white;
+      .role-name {
+        color: $primary;
+        margin-bottom: 8px;
+        border-bottom: 1px solid $primary;
+      }
+      .location-info-1, .location-info-2 {
+        margin: 0;
+      }
+      p {
+        font-size: 15px;
+      }
+      .contact-email {
+        color: $primary;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+  ._main-content-wrap {
+    .img-name-wrap {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .hero-wrap .video-wrap {
+      width:100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .hero-wrap .video-wrap { 
+      width:auto;
+      height: 100%;
+  }
+}

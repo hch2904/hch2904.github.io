@@ -1,0 +1,40 @@
+@import "../colors";
+
+.footer-wrap {
+  background-color: $bg-primary;
+  padding: 60px 0;
+  color: white;
+
+  .__content-wrap,
+  .footer-2-wrap {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .__left-panel-wrap {
+    h3,
+    h4,
+    p {
+      margin: 0;
+      font-weight: normal;
+    }
+    h3 {
+      color: $primary;
+      font-weight: bold;
+    }
+    p {
+      font-size: 13px;
+    }
+    .contact-info-wrap {
+      padding-top: 16px;
+    }
+  }
+
+  .footer-2-wrap {
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
