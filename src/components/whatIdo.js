@@ -8,6 +8,7 @@ const WhatIdo = () => {
     <div className='about-me-wrap'>
       <div className="section-heading">
         <h3 className="__heading">What I Do?</h3>
+        <span className='__fake-border'/>
       </div>
       <div className="main-content-wrap">
         <div className="work-type-wrap">

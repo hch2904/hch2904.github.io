@@ -4,6 +4,8 @@ import Icons from '../assets/svgs/icons';
 import '../styles/components/footer.scss';
 import SocialLinks from './social';
 
+import myPhoto from '../assets/images/hch.jpg';
+
 const Footer = (props) => {
   const { bgColor } = props;
   return (
@@ -17,8 +19,10 @@ const Footer = (props) => {
             <p>himanshu2904@outook.com</p>
           </div>
         </div>
-        <div className="__left-panel-wrap">
-
+        <div className="__right-panel-wrap">
+          <div className="img-wrap">
+            <img src={myPhoto} alt="" />
+          </div>
         </div>
       </div>
       <div className="footer-2-wrap generic-960-wrap">

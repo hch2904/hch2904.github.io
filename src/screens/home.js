@@ -4,6 +4,7 @@ import Hero from '../components/hero';
 import WhatIdo from '../components/whatIdo';
 import AboutMe from '../components/aboutMe';
 import Footer from '../components/footer';
+import Projects from '../components/projects';
 
 const HomeScreen = () => {
   return (<>
@@ -11,6 +12,7 @@ const HomeScreen = () => {
     <Hero />
     <AboutMe />
     <WhatIdo />
+    <Projects />
     <Footer />
   </>
   );

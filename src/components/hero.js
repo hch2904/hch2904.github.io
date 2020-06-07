@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import myImg from '../assets/images/my-hero-img.png';
+// import myImg from '../assets/images/my-hero-img.png';
 import bgVideo from '../assets/bg-video.mp4';
 
 import '../styles/components/hero.scss';
 import SocialLinks from './social';
+import Icons from '../assets/svgs/icons';
 
 const Hero = () => {
+
+  useEffect(() => {
+    const namePaths = document.querySelectorAll('.name-wrap svg path');
+    const pathLengths = [];
+    for (let i = 0; i < namePaths.length; i++) {
+      const path = namePaths[i];
+      const pathLength = path.getTotalLength();
+      path.style.strokeDasharray = pathLength;
+      path.style.strokeDashoffset = pathLength;
+      path.style.animation = 'name-move-fill 2s ease forwards 0.6s';
+      pathLengths.push(namePaths[i].getTotalLength());
+    }
+  });
+
   return (
     <div className="hero-wrap">
       <video className='video-wrap' autoPlay muted loop id="myVideo">
@@ -14,10 +29,9 @@ const Hero = () => {
       </video>
       <div className="_main-content-wrap">
         <div className="img-name-wrap">
-          <img src={myImg} alt="" className="my-img-wrap"/>
           <div className='name-wrap'>
-            <h1 className='fname'>Himanshu</h1>
-            <h1 className='lname'>Chanan</h1>
+            <div className="fname">{Icons.HIMANSHU}</div>
+            <div className="lname">{Icons.CHANAN}</div>
             <hr className='fake-border' />
             <SocialLinks />
           </div>
