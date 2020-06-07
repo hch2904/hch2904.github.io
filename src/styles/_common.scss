@@ -2,8 +2,8 @@
 
 .hch-btn-primary {
   height: 32px;
-  background-color: $bg-primary;
-  border: 1px solid white;
+  background-color: transparent;
+  border: none;
   color: white;
   width: fit-content;
   padding: 0 8px;
@@ -14,6 +14,7 @@
   cursor: pointer;
   &:hover,
   &:active {
+    border: 1px solid white;
     background-color: #333;
     border-color: $primary;
   }
@@ -27,9 +28,25 @@
   font-weight: 700;
 }
 
+.__fake-border {
+  text-align: center;
+  display: block;
+  height: 4px;
+  width: 24px;
+  border-radius: 10px;
+  background-color: $primary;
+  margin: 16px auto;
+}
+
 @media only screen and (max-width: 960px) {
   .generic-960-wrap {
     max-width: 960px;
-    margin: 0 16px!important;
+    margin: 0 16px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .generic-960-wrap {
+    flex-direction: column;
   }
 }

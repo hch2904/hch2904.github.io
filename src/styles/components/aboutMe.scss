@@ -12,10 +12,13 @@
       .__heading {
         margin-bottom: 16px;
         font-size: 32px;
+        display: inline-block;
       }
       hr {
         text-align: left;
-        width: 260px;
+        width: 24px;
+        border-radius: 10px;
+        border-width: 4px;
         border-color: $primary;
         margin: 0;
       }
@@ -48,6 +51,21 @@
       .__email {
         color: $primary;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me-wrap-full {
+    padding: 60px 0;
+    .about-me-wrap-960 {
+      .__content-wrap {
+        flex-direction: column;
+        .__left-panel,
+        .__right-panel {
+          margin-bottom: 32px;
+        }
       }
     }
   }
