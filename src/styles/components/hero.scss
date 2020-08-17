@@ -48,6 +48,12 @@
         z-index: 1;
         color: white;
         font-size: 42px;
+
+        .emoji-wrap {
+          display: inline-block;
+          animation: wave 1500ms 600ms ease-in-out;
+        }
+
         svg,
         mask {
           animation: name-fill 600ms forwards 2100ms;

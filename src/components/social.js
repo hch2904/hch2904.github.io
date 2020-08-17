@@ -26,6 +26,11 @@ const SocialLinks = () => {
         {Icons.TWITTER}
       </a>
     </div>
+    <div className="icon-wrap">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/hch2904">
+        {Icons.GITHUB}
+      </a>
+    </div>
   </div>);
 };
 

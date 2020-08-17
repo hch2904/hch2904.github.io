@@ -30,6 +30,7 @@ const Hero = () => {
       <div className="_main-content-wrap">
         <div className="img-name-wrap">
           <div className='name-wrap'>
+            <p>Hey there! <span className='emoji-wrap'>&#128075;&#127996;</span> I am </p>
             <div className="fname">{Icons.HIMANSHU}</div>
             <div className="lname">{Icons.CHANAN}</div>
             <hr className='fake-border' />
