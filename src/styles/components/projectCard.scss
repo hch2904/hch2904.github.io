@@ -1,0 +1,36 @@
+@import "../colors";
+
+.card-container {
+  margin: 16px 16px;
+  padding: 24px;
+  min-height: 380px;
+  max-width: 240px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.25);
+  background-color: $deep-black;
+  color: white;
+  transition: transform ease-in-out 300ms;
+
+  .img-wrap {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .project-heading {
+    color: $primary;
+    margin-bottom: 16px;
+  }
+
+  .__role,
+  .__tech,
+  .__mini-description {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    transform: translate(0, -8px);
+  }
+}

@@ -1,0 +1,16 @@
+@import "../colors";
+
+.chip-container {
+  padding: 4px 8px;
+  background-color: $bg-component;
+  border-radius: 8px;
+  width: fit-content;
+  margin-right: 4px;
+  margin-bottom: 4px;
+
+  .chip-title {
+    color: $primary;
+    padding: 4px 8px;
+    font-weight: 700;
+  }
+}

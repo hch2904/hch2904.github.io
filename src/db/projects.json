@@ -1,0 +1,30 @@
+[
+  {
+    "heading": "Dashboard For Doctors",
+    "imgName": "medical.png",
+    "role": "Front-End Developer",
+    "tech": "ReactJS",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias sapiente nesciunt in facere animi fugiat molestiae."
+  },
+  {
+    "heading": "Chat Bot for FB",
+    "imgName": "shopping.png",
+    "role": "Backend Developer",
+    "tech": "NodeJS",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam, dolorum amet, vitae fuga mollitia."
+  },
+  {
+    "heading": "Live Receipts",
+    "imgName": "receipts.png",
+    "role": "Backend Developer",
+    "tech": "Java/Spring",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam, dolorum amet, vitae fuga mollitia."
+  },
+  {
+    "heading": "Live Receipts",
+    "imgName": "receipts.png",
+    "role": "Backend Developer",
+    "tech": "Java/Spring",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam, dolorum amet, vitae fuga mollitia."
+  }
+]

@@ -3,4 +3,64 @@
 .project-container {
   background-color: $bg-primary;
   height: 100vh;
+  color: white;
+
+  .main-content-full-bg {
+    padding-top: 120px;
+    background: url('../../assets/images/retail-bg.jpg') rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 400px;
+    border-bottom: 1px solid $deep-black;
+  }
+
+  .main-content-wrap {
+    margin: 0 auto;
+  }
+
+  .__main-heading-container-wrap {
+    text-align: center;
+    .__main-heading {
+      font-size: 32px;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    .__main-subheading {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .description-wrap {
+    display: flex;
+    justify-content: space-around;
+
+    .description-left {
+      flex: 2;
+    }
+    .description-right {
+      flex: 1;
+      .chip-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
+
+    .stack-wrap {
+      display: flex;
+    }
+    
+    .stack-info-wrap {
+      margin-top: 16px;
+    }
+  }
+
+  .write-up-full-wrap {
+    padding: 60px 0;
+    .write-up-content-wrap {
+      margin: 0 auto;
+    }
+  }
 }

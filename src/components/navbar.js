@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/components/navigation.scss';
 import Icons from '../assets/svgs/icons';
+import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const NavigationBar = () => {
   const handleScroll = () => {
     if (window.pageYOffset > 100) {
       return setHasScrolled(true);
-    } 
+    }
     return setHasScrolled(false);
   };
 
@@ -24,16 +25,18 @@ const NavigationBar = () => {
     <div className={`navbar-wrap ${hasScrolled && 'scrolled'}`}>
       <div className="desk-wrap">
         <div className='left-panel'>
-          {Icons.LOGO}
+          <Link to="/">{Icons.LOGO}</Link>
         </div>
         <div className='right-panel'>
           <div className={`menu-items-wrap ${isMobileMenuOpen && 'mobile-menu-open'}`}>
-            <div className="menu-item-wrap">
-              <button className='hch-btn-primary'>About</button>
-            </div>
-            <div className="menu-item-wrap">
-              <button className='hch-btn-primary'>Work</button>
-            </div>
+            <Link to="/about">
+              <div className="menu-item-wrap">
+                <button className='hch-btn-primary'>About</button>
+              </div>
+            </Link>
+            <Link to="/projects">
+              <button className='hch-btn-primary'>Projects</button>
+            </Link>
             <div className="menu-item-wrap">
               <button className='hch-btn-primary'>Contact</button>
             </div>
