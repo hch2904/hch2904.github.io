@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.d95716b7.chunk.css",
-    "main.js": "/static/js/main.4147d654.chunk.js",
-    "main.js.map": "/static/js/main.4147d654.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.36c8ad59.js",
-    "runtime-main.js.map": "/static/js/runtime-main.36c8ad59.js.map",
-    "static/js/2.8399d8f2.chunk.js": "/static/js/2.8399d8f2.chunk.js",
-    "static/js/2.8399d8f2.chunk.js.map": "/static/js/2.8399d8f2.chunk.js.map",
+    "main.css": "/static/css/main.f7ec8cab.chunk.css",
+    "main.js": "/static/js/main.3b8b12ef.chunk.js",
+    "main.js.map": "/static/js/main.3b8b12ef.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.93871f59.js",
+    "runtime-main.js.map": "/static/js/runtime-main.93871f59.js.map",
+    "static/js/2.36acfdc4.chunk.js": "/static/js/2.36acfdc4.chunk.js",
+    "static/js/2.36acfdc4.chunk.js.map": "/static/js/2.36acfdc4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.965af107e707c1119799d59809492742.js": "/precache-manifest.965af107e707c1119799d59809492742.js",
+    "precache-manifest.287b4dc2bf20da6f1af05b14e43027bc.js": "/precache-manifest.287b4dc2bf20da6f1af05b14e43027bc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d95716b7.chunk.css.map": "/static/css/main.d95716b7.chunk.css.map",
-    "static/js/2.8399d8f2.chunk.js.LICENSE.txt": "/static/js/2.8399d8f2.chunk.js.LICENSE.txt",
+    "static/css/main.f7ec8cab.chunk.css.map": "/static/css/main.f7ec8cab.chunk.css.map",
+    "static/js/2.36acfdc4.chunk.js.LICENSE.txt": "/static/js/2.36acfdc4.chunk.js.LICENSE.txt",
     "static/media/bg-video.mp4": "/static/media/bg-video.17e0dd66.mp4",
+    "static/media/hch-avatar.png": "/static/media/hch-avatar.b1389a4c.png",
     "static/media/hch.jpg": "/static/media/hch.55b6ed5e.jpg",
+    "static/media/hero-bg.png": "/static/media/hero-bg.fd88e2ed.png",
     "static/media/medical.png": "/static/media/medical.86cfefbf.png",
+    "static/media/my-hero-img.png": "/static/media/my-hero-img.2a44e5ad.png",
+    "static/media/not-found.png": "/static/media/not-found.e768d422.png",
     "static/media/receipts.png": "/static/media/receipts.51044750.png",
+    "static/media/project.scss": "/static/media/retail-bg.d045b75c.jpg",
     "static/media/shopping.png": "/static/media/shopping.44169847.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.36c8ad59.js",
-    "static/js/2.8399d8f2.chunk.js",
-    "static/css/main.d95716b7.chunk.css",
-    "static/js/main.4147d654.chunk.js"
+    "static/js/runtime-main.93871f59.js",
+    "static/js/2.36acfdc4.chunk.js",
+    "static/css/main.f7ec8cab.chunk.css",
+    "static/js/main.3b8b12ef.chunk.js"
   ]
 }
