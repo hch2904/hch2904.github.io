@@ -18,6 +18,9 @@
     background-color: #333;
     border-color: $primary;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .generic-960-wrap {

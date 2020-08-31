@@ -19,10 +19,11 @@ const routes = [
   {
     // eslint-disable-next-line react/display-name
     path: '/project/:id', name: 'Project', Component: (routerProps) => {
-      console.log(routerProps);
+      const { pathname } = routerProps.location; 
+      const hash = pathname.substr(9);
       return (<ProjectScreen
         {...routerProps}
-        details={projectsDb.filter(project => project.slug === routerProps.match.params.id)[0]}
+        details={projectsDb.filter(project => project.slug === hash)[0]}
       />);
     }
   },
@@ -34,20 +35,21 @@ const AppRoutes = () => {
   return (
     <>
       <NavigationBar />
-      <Route render={({location}) => {
-        const { pathname } = location;
+      <Route render={(props) => {
+        const { pathname } = props.location;
         return (
           <TransitionGroup>
             <CSSTransition
               timeout={900}
               classNames='screen'
               key={pathname}
+              unmountOnExit
             >
-              <Switch location={location}>
+              <Switch location={props.location}>
                 {routes.map(({ path, Component }) => (
                   <Route exact key={path} path={path}>
                     <div className="screen">
-                      <Component />
+                      <Component {...props} />
                     </div>
                   </Route>
                 ))}

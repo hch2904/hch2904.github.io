@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Footer from '../components/footer';
 import projects from '../db/projects.json';
 import ProjectCard from '../components/projectCard';
@@ -17,14 +19,21 @@ const Projects = () => {
           </div>
           <div className='project-card-wrap'>
             {projects.map((project) =>
-              <ProjectCard
-                key={project.heading}
-                heading={project.heading}
-                imgName={project.imgName}
-                role={project.role}
-                tech={project.tech}
-                description={project.description}
-              />)}
+              <Link 
+                to={`/project/${project.slug}`}
+                key={project.slug}
+                style={{ textDecoration: 'none' }}
+              >
+                <ProjectCard
+                  key={project.heading}
+                  heading={project.heading}
+                  imgName={project.imgName}
+                  role={project.role}
+                  tech={project.tech}
+                  description={project.description}
+                />
+              </Link>
+            )}
           </div>
         </div>
         <Footer />

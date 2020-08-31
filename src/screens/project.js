@@ -3,6 +3,7 @@ import '../styles/screens/project.scss';
 import Chip from '../components/chip';
 import Footer from '../components/footer';
 import ReactMarkdown from 'react-markdown';
+import { Redirect } from 'react-router';
 
 
 const input = `
@@ -32,7 +33,7 @@ Changes are automatically rendered as you type.
  */
 const ProjectScreen = (props) => {
   const { id } = props.match.params;
-  if (!props.details) return (<div>Not found</div>);
+  if (!props.details) return (<Redirect to="/not-found"/>);
   const { heading, subHeading, description,
     text, stack, roles } = props.details;
   return (

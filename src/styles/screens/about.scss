@@ -1,0 +1,16 @@
+@import "../colors";
+
+.about-full-wrap {
+  background: $bg-primary;
+  padding-top: 120px;
+}
+
+.__my-photo-wrap {
+  margin: 0 auto;
+  text-align: center;
+  img {
+    max-width: 100%;
+    width: 240px;
+    border-radius: 50%;
+  }
+}
