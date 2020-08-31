@@ -12,7 +12,9 @@ const HomeScreen = () => {
     <Hero />
     <AboutMe />
     <WhatIdo />
-    <Projects />
+    <Projects 
+      max={3}
+    />
     <Footer />
   </>
   );

@@ -1,0 +1,33 @@
+@import "../colors";
+
+.project-screen-wrap {
+  background: $bg-secondary;
+  padding-top: 120px;
+
+  .project-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+  }
+
+  .project-header-wrap {
+    margin: 24px auto;
+    text-align: center;
+    .component-header {
+      text-transform: none;
+      color: white;
+    }
+  }
+
+  .main-content-wrap {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-screen-wrap {
+    .project-card-wrap {
+      justify-content: center;
+    }
+  }
+}

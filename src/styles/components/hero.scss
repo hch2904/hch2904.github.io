@@ -48,6 +48,12 @@
         z-index: 1;
         color: white;
         font-size: 42px;
+
+        .emoji-wrap {
+          display: inline-block;
+          animation: wave 1500ms 600ms ease-in-out;
+        }
+
         svg,
         mask {
           animation: name-fill 600ms forwards 2100ms;
@@ -116,6 +122,7 @@
   .hero-wrap {
     ._main-content-wrap {
       flex-direction: column;
+      padding-top: 60px;
       .fake-border {
         max-width: 120px;
       }
@@ -141,7 +148,7 @@
 @media only screen and (max-width: 320px) {
   .hero-wrap {
     ._main-content-wrap {
-      padding-top: 60px;
+      padding-top: 120px;
       .img-name-wrap {
         flex: 1;
         .fname {

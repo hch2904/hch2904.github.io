@@ -1,7 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,400;1,700&display=swap');
-@import './styles/common.scss';
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import "./styles/common.scss";
 
-body, button {
-    font-family: 'Lato', 'Playfair Display', sans-serif;;
+body,
+button {
+  font-family: "Lato", "Playfair Display", sans-serif;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.screen-container {
+  position: relative;
+  background-color: black;
+}
+
+.screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.screen-appear,
+.screen-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.screen-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.screen-exit {
+  opacity: 1;
+}
+
+.screen-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
 }

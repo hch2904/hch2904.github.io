@@ -18,6 +18,9 @@
     background-color: #333;
     border-color: $primary;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .generic-960-wrap {
@@ -36,6 +39,29 @@
   border-radius: 10px;
   background-color: $primary;
   margin: 16px auto;
+}
+
+.gutter-bottom {
+  margin-bottom: 16px;
+}
+
+.page-header {
+  font-weight: 700;
+  color: $primary;
+  font-size: 40px;
+}
+
+.component-header {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $primary;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.component-description {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 960px) {
