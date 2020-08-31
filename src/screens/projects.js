@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import NavigationBar from '../components/navbar';
 import Footer from '../components/footer';
 import projects from '../db/projects.json';
@@ -6,17 +6,13 @@ import ProjectCard from '../components/projectCard';
 
 import '../styles/screens/projects.scss';
 
-const Projects = (props) => {
-  useEffect(() => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0;
-  }, []);
+const Projects = () => {
   return (
     <>
       <NavigationBar />
       <div className='project-screen-wrap'>
         <div className="generic-960-wrap main-content-wrap">
-          <div className='project-header-wrap'>  
+          <div className='project-header-wrap'>
             <h2 className='page-header gutter-bottom'>Projects</h2>
             <h3 className="component-header">My Recent Work</h3>
             <div className='__fake-border' />

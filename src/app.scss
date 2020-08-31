@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import "./styles/common.scss";
 
 body,
 button {
-    font-family: "Lato", "Playfair Display", sans-serif;
+  font-family: "Lato", "Playfair Display", sans-serif;
 }
 
 h1,
@@ -14,5 +14,37 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
+}
+
+.screen-container {
+  position: relative;
+}
+
+.screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.screen-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.screen-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.screen-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.screen-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }
