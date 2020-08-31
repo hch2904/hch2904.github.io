@@ -1,6 +1,4 @@
 import React from 'react';
-import NavigationBar from '../components/navbar';
-
 import '../styles/screens/project.scss';
 import Chip from '../components/chip';
 import Footer from '../components/footer';
@@ -34,12 +32,11 @@ Changes are automatically rendered as you type.
  */
 const ProjectScreen = (props) => {
   const { id } = props.match.params;
+  if (!props.details) return (<div>Not found</div>);
   const { heading, subHeading, description,
     text, stack, roles } = props.details;
-  console.log(id);
   return (
     <div className="project-container">
-      <NavigationBar />
       <div className="main-content-full-bg">
         <div className="generic-960-wrap main-content-wrap">
           <div className="__main-heading-container-wrap">
@@ -54,7 +51,7 @@ const ProjectScreen = (props) => {
               <div className="stack-info-wrap">
                 <h6 className='component-header'>Stack</h6>
                 <div className="stack-wrap">
-                  {stack.map((name) =>
+                  {stack && stack.map((name) =>
                     (<Chip
                       key={name}
                       title={name}
@@ -66,7 +63,7 @@ const ProjectScreen = (props) => {
             <div className="description-right">
               <h6 className='component-header'>Roles</h6>
               <div className="chip-wrap">
-                {roles.map((name) =>
+                {roles && roles.map((name) =>
                   (<Chip
                     key={name}
                     title={name}

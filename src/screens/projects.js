@@ -1,5 +1,4 @@
 import React from 'react';
-import NavigationBar from '../components/navbar';
 import Footer from '../components/footer';
 import projects from '../db/projects.json';
 import ProjectCard from '../components/projectCard';
@@ -9,7 +8,6 @@ import '../styles/screens/projects.scss';
 const Projects = () => {
   return (
     <>
-      <NavigationBar />
       <div className='project-screen-wrap'>
         <div className="generic-960-wrap main-content-wrap">
           <div className='project-header-wrap'>

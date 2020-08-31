@@ -5,6 +5,7 @@
 body,
 button {
   font-family: "Lato", "Playfair Display", sans-serif;
+  background-color: black;
 }
 
 h1,
@@ -19,6 +20,7 @@ p {
 
 .screen-container {
   position: relative;
+  background-color: black;
 }
 
 .screen {
@@ -27,24 +29,22 @@ p {
   right: 0;
 }
 
+.screen-appear,
 .screen-enter {
   opacity: 0;
-  transform: scale(1.1);
+  z-index: 1;
 }
 
 .screen-enter-active {
   opacity: 1;
-  transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms linear 150ms;
 }
 
 .screen-exit {
   opacity: 1;
-  transform: scale(1);
 }
 
 .screen-exit-active {
   opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 150ms linear;
 }
