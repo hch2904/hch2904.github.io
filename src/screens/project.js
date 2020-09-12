@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/screens/project.scss';
 import Chip from '../components/chip';
 import Footer from '../components/footer';
@@ -33,9 +33,21 @@ Changes are automatically rendered as you type.
  */
 const ProjectScreen = (props) => {
   const { id } = props.match.params;
-  if (!props.details) return (<Redirect to="/not-found"/>);
-  const { heading, subHeading, description,
-    text, stack, roles } = props.details;
+  useEffect(() => {
+    const getMd = async (filename) => {
+      const mdFileModule = await require(`../db/mds/${filename}`);
+      const res = await fetch(mdFileModule);
+      setMd(await res.text());
+    };
+    
+    getMd('live-receipt.md');
+  }, []);
+
+  let [md, setMd] = useState(null);
+
+  if (!props.details) return (<Redirect to="/not-found" />);
+  const { heading, subHeading, description, stack, roles } = props.details;
+
   return (
     <div className="project-container">
       <div className="main-content-full-bg">
@@ -77,8 +89,9 @@ const ProjectScreen = (props) => {
       </div>
       <div className="write-up-full-wrap">
         <div className="write-up-content-wrap generic-960-wrap">
-          <ReactMarkdown 
-            source={input}
+          <ReactMarkdown
+            source={md}
+            renderers={{ root: React.Fragment }}
           />
         </div>
       </div>

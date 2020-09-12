@@ -41,10 +41,12 @@ const Hero = () => {
           <h1 className="role-name">
             Software Developer
           </h1>
-          <h1 className='location-info-1'>Based Out of India</h1>
-          <h1 className='location-info-2'>Something</h1>
-          <p className='some-info-block'>some  more info , i do this and thata and this and that some more text etc and some more text some random qoute, in the end it’s not the years that count it’s the life in those years. </p>
-          <p className='contact-email'>himanshu2904@outlok.com</p>
+          <h1 className='location-info-1'></h1>
+          <h1 className='location-info-2'></h1>
+          <p className='some-info-block'>I&apos;m passionate for software development and keen to learn new technologies and frameworks. I strive to develop websites that standout and are visually appealing. I have had a varied experience in both frontend and backend development. </p>
+          <p className='contact-email'>
+            <a href="mailto:himanshu2904@outlook.com">himanshu2904@outlok.com</a>
+          </p>
         </div>
       </div>
     </div>

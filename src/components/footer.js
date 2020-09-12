@@ -16,7 +16,7 @@ const Footer = (props) => {
           <h4>Software Developer</h4>
           <div className="contact-info-wrap">
             <p>Lets get in touch</p>
-            <p>himanshu2904@outook.com</p>
+            <p><a className='__email' href="mailto:himanshu2904@outlook.com">himanshu2904@outook.com </a></p>
           </div>
         </div>
         <div className="__right-panel-wrap">

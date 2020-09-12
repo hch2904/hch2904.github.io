@@ -22,6 +22,13 @@
         border-color: $primary;
         margin: 0;
       }
+
+      .__fake-border {
+        display: block;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 16px;
+      }
     }
 
     .__content-wrap {
@@ -36,6 +43,7 @@
       .experience-wrap {
         display: flex;
         align-items: center;
+        margin-top: 16px;
         .__noxp {
           color: $primary;
           font-size: 42px;
@@ -51,6 +59,10 @@
       .__email {
         color: $primary;
         cursor: pointer;
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
       }
     }
   }

@@ -96,6 +96,10 @@
       }
       .contact-email {
         color: $primary;
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
       }
       animation: slide-up 600ms 600ms ease-in-out forwards;
     }

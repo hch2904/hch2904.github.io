@@ -18,14 +18,16 @@ const Projects = (props) => {
         <span className='__fake-border'></span>
         <div className="cards-wrap">
           {data.map((project) =>
-            <ProjectCard
-              key={project.heading}
-              heading={project.heading}
-              imgName={project.imgName}
-              role={project.role}
-              tech={project.tech}
-              description={project.description}
-            />)}
+            <Link key={project.slug} to={`/project/${project.slug}`}>
+              <ProjectCard
+                key={project.heading}
+                heading={project.heading}
+                imgName={project.imgName}
+                role={project.role}
+                tech={project.tech}
+                description={project.description}
+              />
+            </Link>)}
         </div>
         <Link to="/projects">
           <button className="explore-more">

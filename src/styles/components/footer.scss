@@ -33,6 +33,10 @@
     }
     .contact-info-wrap {
       padding-top: 16px;
+      .__email {
+        text-decoration: none;
+        color: $primary;
+      }
     }
   }
 

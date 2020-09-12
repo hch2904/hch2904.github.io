@@ -65,8 +65,8 @@ function App () {
   return (
     <>
       <Router>
-        <ScrollToTop />
         <Route path="/" component={AppRoutes} />
+        <ScrollToTop />
       </Router>
     </>
   );
