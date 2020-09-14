@@ -18,7 +18,7 @@ const WhatIdo = () => {
           <div className="heading-wrap">
             <h2>Frontend</h2>
           </div>
-          <p className='info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe asperiores eligendi obcaecati molestias laudantium enim.</p>
+          <p className='info-text'>I am profficient in front-end technologies like React. Using reactjs I have developed many performant apps for web.</p>
         </div>
         <div className="work-type-wrap">
           <div className="icon-wrap">
@@ -27,7 +27,7 @@ const WhatIdo = () => {
           <div className="heading-wrap">
             <h2>Backend</h2>
           </div>
-          <p className="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe asperiores eligendi obcaecati molestias laudantium enim.</p>
+          <p className="info-text">Working on microservice architecture has helped me strengthen my skills as a backend developer</p>
         </div>
         <div className="work-type-wrap">
           <div className="icon-wrap">
@@ -36,7 +36,7 @@ const WhatIdo = () => {
           <div className="heading-wrap">
             <h2>Mobile App</h2>
           </div>
-          <p className="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe asperiores eligendi obcaecati molestias laudantium enim.</p>
+          <p className="info-text">Although a newbie, in mobile development, I have overall understanding in cross platform app development frameworks such as React Native and Flutter.</p>
         </div>
       </div>
     </div>

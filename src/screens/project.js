@@ -5,21 +5,6 @@ import Footer from '../components/footer';
 import ReactMarkdown from 'react-markdown';
 import { Redirect } from 'react-router';
 
-
-const input = `
-# Live demo
-Changes are automatically rendered as you type.
-## Table of Contents
-* Implements [GitHub Flavored Markdown](https://github.github.com/gfm/)
-* Renders actual, "native" React DOM elements
-* Allows you to escape or skip HTML (try toggling the checkboxes above)
-* If you escape or skip the HTML, no \`dangerouslySetInnerHTML\` is used! Yay!
-## HTML block below
-<blockquote>
-  This blockquote will change based on the HTML settings above.
-</blockquote>
-`;
-
 /**
  * 
  * @param {*} props
@@ -32,7 +17,6 @@ Changes are automatically rendered as you type.
  * @param {[]} details.roles
  */
 const ProjectScreen = (props) => {
-  const { id } = props.match.params;
   useEffect(() => {
     const getMd = async (filename) => {
       const mdFileModule = await require(`../db/mds/${filename}`);

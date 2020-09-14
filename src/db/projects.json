@@ -4,31 +4,30 @@
     "imgName": "medical.png",
     "role": "Front-End Developer",
     "tech": "ReactJS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias sapiente nesciunt in facere animi fugiat molestiae.",
-    "slug": "doctor-dashboard"
+    "description": "Developed a doctor dashboard for practices in germany, which helps doctors connect with patients via messaging and managing other tasks.",
+    "stack": ["ReactJS", "Redux", "Server Sent Events"],
+    "slug": "doctor-dashboard",
+    "roles": ["Front-End Developer"],
+    "mdFile": "doctor-dashboad.md"
   },
   {
-    "heading": "Chat Bot for FB",
+    "heading": "Retail Assistant Bot",
     "imgName": "shopping.png",
     "role": "Backend Developer",
+    "roles": ["Backend Developer"],
     "tech": "NodeJS",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam, dolorum amet, vitae fuga mollitia.",
+    "stack": ["NodeJS", "Botkit", "NLP", "ReactJS", "gRPC", "Protobuf", "Mircroservices"],
+    "description": "Developed a retail assistant which had its presence on Facebook messenger, Messaging app, Google Assistant. The retail assistant was used to organize and manage purchases across multiple retailers.",
     "slug": "chat-bot"
   },
   {
     "heading": "Live Receipts",
     "imgName": "receipts.png",
     "role": "Backend Developer",
+    "roles": ["Backend Developer"],
     "tech": "Java/Spring",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam, dolorum amet, vitae fuga mollitia.",
-    "slug": "live-receipts"
-  },
-  {
-    "heading": "Live Receipts",
-    "imgName": "receipts.png",
-    "role": "Backend Developer",
-    "tech": "Java/Spring",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam, dolorum amet, vitae fuga mollitia.",
+    "stack": ["Springboot", "Mircroservices", "gRPC", "Protobuf"],
+    "description": "Implemented the backend services which were responsible for storing and retrieving all the purchases of the users and instantly sending custom receipts to channels like Facebook messenger and google assistant",
     "slug": "live-receipts"
   }
 ]
