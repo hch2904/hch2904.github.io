@@ -11,7 +11,7 @@ const NotFound = () => {
   return (<>
     <div className='generic-960-wrap not-found-wrap'>
       <div className='img-wrap'>
-        <img src={notFoundImg} />
+        <img src={notFoundImg} alt="page-not-found" />
       </div>
       <h3 className='page-header'>You Seem Lost!</h3>
       <Link to="/" style={{ textDecoration: 'none' }}>
