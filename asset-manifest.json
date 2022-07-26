@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91d26904.chunk.css",
+    "main.js": "/static/js/main.91223095.chunk.js",
+    "main.js.map": "/static/js/main.91223095.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d4c0879b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d4c0879b.js.map",
+    "static/js/2.025f27e0.chunk.js": "/static/js/2.025f27e0.chunk.js",
+    "static/js/2.025f27e0.chunk.js.map": "/static/js/2.025f27e0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7345d9fbdcd608e7eb326c55a55713fe.js": "/precache-manifest.7345d9fbdcd608e7eb326c55a55713fe.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.91d26904.chunk.css.map": "/static/css/main.91d26904.chunk.css.map",
+    "static/js/2.025f27e0.chunk.js.LICENSE.txt": "/static/js/2.025f27e0.chunk.js.LICENSE.txt",
+    "static/js/main.91223095.chunk.js.LICENSE.txt": "/static/js/main.91223095.chunk.js.LICENSE.txt",
+    "static/media/bg-video.mp4": "/static/media/bg-video.17e0dd66.mp4",
+    "static/media/hch-avatar.png": "/static/media/hch-avatar.b1389a4c.png",
+    "static/media/hch.jpg": "/static/media/hch.55b6ed5e.jpg",
+    "static/media/hero-bg.png": "/static/media/hero-bg.fd88e2ed.png",
+    "static/media/live-receipt.md": "/static/media/live-receipt.fa569e6b.md",
+    "static/media/medical.png": "/static/media/medical.86cfefbf.png",
+    "static/media/my-hero-img.png": "/static/media/my-hero-img.2a44e5ad.png",
+    "static/media/not-found.png": "/static/media/not-found.e768d422.png",
+    "static/media/receipts.png": "/static/media/receipts.51044750.png",
+    "static/media/project.scss": "/static/media/retail-bg.d045b75c.jpg",
+    "static/media/shopping.png": "/static/media/shopping.44169847.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4c0879b.js",
+    "static/js/2.025f27e0.chunk.js",
+    "static/css/main.91d26904.chunk.css",
+    "static/js/main.91223095.chunk.js"
+  ]
+}
